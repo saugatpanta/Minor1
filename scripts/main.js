@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
             setTimeout(() => {
                 if (role === 'admin') {
-                    window.location.href = 'admin-dashboard.html';
+                    window.location.href = 'html/admin-dashboard.html';
                 } else if (role === 'employee') {
-                    window.location.href = 'employee-dashboard.html';
+                    window.location.href = 'html/employee-dashboard.html';
                 } else {
-                    window.location.href = 'client-dashboard.html';
+                    window.location.href = 'html/client-dashboard.html';
                 }
             }, 1500);
         } else {
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 adminLoginForm.reset();
                 setTimeout(() => {
-                    window.location.href = 'admin-dashboard.html';
+                    window.location.href = 'html/admin-dashboard.html';
                 }, 1500);
             } else {
                 console.log('Comparison failed:', {
@@ -361,13 +361,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const role = isAdmin ? 'admin' : currentUser.role;
             switch(role) {
                 case 'admin':
-                    window.location.href = 'admin-dashboard.html';
+                    window.location.href = 'html/admin-dashboard.html';
                     break;
                 case 'employee':
-                    window.location.href = 'employee-dashboard.html';
+                    window.location.href = 'html/employee-dashboard.html';
                     break;
                 case 'client':
-                    window.location.href = 'client-dashboard.html';
+                    window.location.href = 'html/client-dashboard.html';
                     break;
             }
         }
